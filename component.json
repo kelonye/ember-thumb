@@ -1,0 +1,14 @@
+{
+  "name": "ember-thumb",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "Handlebars thumbnail helper backed by component/thumb",
+  "dependencies": {
+    "kelonye/ember": "*",
+    "component/thumb": "*"
+  },
+  "scripts": [
+    "index.js",
+    "lib/index.js"
+  ]
+}
