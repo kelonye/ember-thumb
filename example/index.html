@@ -1,0 +1,31 @@
+<body>
+  <input type='file'>
+  <section></section>
+  <script src='../build/build.js'></script>
+  <script>
+    var thumb = require('ember-thumb');
+
+    var input = document.querySelector('input');
+    input.onchange = function(e){
+
+      var reader = new FileReader;
+      reader.onload = function(e){
+
+        [
+          [50, 50],
+          [100, 100],
+          [150, 150],
+        ].forEach(function(size){
+          Em.View.createWithMixins(thumb, {
+            width: size[0],
+            height: size[1],
+            url: reader.result,
+          }).appendTo('section');
+        });
+
+      }
+      reader.readAsDataURL(input.files[0]);
+
+    }
+  </script>
+</body>

@@ -8,19 +8,15 @@ Install
 component install kelonye/ember-thumb
 ```
 
-Example
----
-
-    $ make example
-
 Usage
 ---
 
 ```
-App.ThumbView = Em.View.createWithMixins require('ember-thumb'),
-  width: 100
-  height: 100
-  url: 'photo.jpg'
+App.ThumbView = Em.View.createWithMixins(require('ember-thumb'), {
+  width: 100, //px
+  height: 100, //px
+  url: 'photo.jpg',
+}).appendTo('body');
 ```
 
 License
