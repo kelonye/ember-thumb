@@ -12,14 +12,12 @@
       reader.onload = function(e){
 
         [
-          [50, 50],
-          [100, 100],
-          [150, 150],
+          50, 100, 150,
         ].forEach(function(size){
           Em.View.createWithMixins(thumb, {
-            width: size[0],
-            height: size[1],
-            url: reader.result,
+            width: size,
+            height: size,
+            src: reader.result,
           }).appendTo('section');
         });
 
