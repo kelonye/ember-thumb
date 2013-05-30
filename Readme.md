@@ -15,7 +15,7 @@ Usage
 App.ThumbView = Em.View.createWithMixins(require('ember-thumb'), {
   width: 100, //px
   height: 100, //px
-  url: 'photo.jpg',
+  src: 'photo.jpg',
 }).appendTo('body');
 ```
 
