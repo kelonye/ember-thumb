@@ -4,6 +4,6 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "component": "*"
+    "component-hooks": "*"
   }
 }

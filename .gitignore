@@ -1,6 +1,6 @@
 syntax: glob
 
-build
+public
 npm-debug.log
 node_modules
 components

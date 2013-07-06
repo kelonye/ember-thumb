@@ -6,8 +6,8 @@
   "dependencies": {
     "kelonye/ember": "*"
   },
+  "main": "lib/index.js",
   "scripts": [
-    "index.js",
     "lib/index.js"
   ]
 }

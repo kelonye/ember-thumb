@@ -1,15 +1,20 @@
-all: node_modules build
+component = ./node_modules/component-hooks/node_modules/.bin/component
 
-build: components lib/index.js
-	@component build --dev
+default: node_modules components public
 
 node_modules:
 	@npm install
 
 components:
-	@component install
+	@$(component) install
+
+public:
+	@$(component) build -n $@ -o $@
+
+example: default
+	@xdg-open example/index.html
 
 clean:
-	@rm -rf build
+	@rm -rf public
 
-.PHONY: clean
+.PHONY: clean example

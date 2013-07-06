@@ -21,6 +21,12 @@ App.ThumbView = Em.View.extend(require('ember-thumb'), {
 
 ```
 
+
+Example
+---
+
+    $ make example
+
 License
 ---
 
