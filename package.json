@@ -1,9 +1,9 @@
 {
   "name": "ember-thumb",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "component-hooks": "*"
+    "component-hooks": "0.2.0"
   }
 }

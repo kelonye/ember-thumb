@@ -8,8 +8,9 @@ node_modules:
 components:
 	@$(component) install
 
-public:
+public: $(shell find lib)
 	@$(component) build -n $@ -o $@
+	@touch $@
 
 example: default
 	@xdg-open example/index.html
