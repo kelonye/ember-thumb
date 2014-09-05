@@ -4,9 +4,7 @@
 Install
 ---
 
-```
-component install kelonye/ember-thumb
-```
+    $ component install kelonye/ember-thumb
 
 Usage
 ---
